@@ -57,11 +57,12 @@ func init() {
 // the caller's main(). Default log output is stdout
 // If the logFile passed in also satisfies io.Closer, logFile.Close will be called
 // when closing the logger.
-func Init(logFile io.Writer) {
+func Init(logFile io.Writer, flags int) {
 	logLock.Lock()
 	defer logLock.Unlock()
 
 	defaultLogFile = logFile
+	flag = flags
 }
 
 // Close closes the default logger.
@@ -194,7 +195,6 @@ func formatHeader(message string, level severity, t time.Time, file string, line
 	switch level {
 	case sInfo:
 		buf = append(buf, tagInfo...)
-
 	case sWarning:
 		buf = append(buf, tagWarning...)
 	case sError:
