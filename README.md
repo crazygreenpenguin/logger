@@ -1,3 +1,7 @@
+[![GoDoc](http://img.shields.io/badge/godoc-reference-blue.svg)](https://godoc.org/github.com/crazygreenpenguin/logger)
+[![License](http://img.shields.io/badge/license-mit-blue.svg)](https://raw.githubusercontent.com/crazygreenpenguin/logger/main/LICENSE)
+[![Build Status](https://travis-ci.com/crazygreenpenguin/logger.svg?branch=main)](https://travis-ci.com/crazygreenpenguin/logger)
+[![Go Report Card](https://goreportcard.com/badge/github.com/crazygreenpenguin/logger)](https://goreportcard.com/report/github.com/crazygreenpenguin/logger)
 # logger
 Simple logger for go
 
